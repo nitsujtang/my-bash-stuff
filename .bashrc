@@ -119,7 +119,7 @@ fi
 
 DEFAULT=${PS1}
 alias lf="ls | cowsay -f stegosaurus"
-alias cse="cd CSE"
+alias cse="cd ~/CSE"
 alias vimrc="vim ~/.vimrc"
 alias bashrc="vim ~/.bashrc"
 alias loadbash="source ~/.bashrc"
@@ -127,3 +127,6 @@ alias bashalias="vim ~/.bash_aliases"
 
 alias python="python3"
 alias pip="pip3"
+
+alias bat="acpi"
+alias batm="acpi -V"

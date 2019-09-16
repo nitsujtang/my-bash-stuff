@@ -33,4 +33,5 @@ else
 fi
 
 echo "DONE"
-source ~/.bashrc
+
+cd ~ && source .bashrc
