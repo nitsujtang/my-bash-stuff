@@ -15,7 +15,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'bronson/vim-trailing-whitespace'
+" Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'tpope/vim-commentary'
 Plugin 'junegunn/goyo.vim'
 Plugin 'morhetz/gruvbox'
@@ -49,7 +49,8 @@ filetype indent on
 set scrolloff=5
 
 " Set line numbers
-set relativenumber
+set number
+" set relativenumber
 
 " Command autocompletion settings
 set wildmenu " enable command autocompletion
@@ -97,7 +98,7 @@ set noshowmode
 syntax enable
 
 " 80 char line length
-match Error /\%81v.\+/ " Highlight chars over 80
+" match Error /\%81v.\+/ " Highlight chars over 80
 set colorcolumn=80 " Column at 80 chars
 
 " Colorscheme
@@ -136,8 +137,8 @@ set autoindent " maintain indentation on newline
 set smartindent " insert new indentation if needed
 
 " Wrapping text
-set textwidth=80 " Set length to wrap at
-set linebreak    " Set wrap to insert linebreak
+" set textwidth=80 " Set length to wrap at
+" set linebreak    " Set wrap to insert linebreak
 if has('autocmd')
     autocmd FileType * setlocal formatoptions+=t " overrides filetype plugin
                                                  " format options setting
